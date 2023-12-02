@@ -9,16 +9,12 @@ fn main(){
     let f = File::open("Day2/inputs/input").unwrap();
     let reader = BufReader::new(f);
 
-    let regex_id = Regex::new(r"(?m)^Game\s*([0-9]+):").unwrap();
     let regex_count = Regex::new( r"([0-9]+)").unwrap();
 
     let mut sum: usize = 0;
 
     for line in reader.lines() {
         let line = line.unwrap();
-
-        let cap_id = regex_id.captures(&line).unwrap();
-        let id = cap_id.get(1).unwrap().as_str().parse::<usize>().unwrap();
 
         let start = line.chars().position(|c| c == ':').unwrap();
 
