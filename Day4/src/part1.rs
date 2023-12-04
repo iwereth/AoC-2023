@@ -21,6 +21,5 @@ fn main() {
             res = res + usize::pow(2, count as u32 - 1);
         }
     }
-
     println!("{}", res);
 }
