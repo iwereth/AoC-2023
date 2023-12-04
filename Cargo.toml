@@ -31,4 +31,3 @@ path = "Day3/src/part2.rs"
 
 [dependencies]
 regex = "1.10.2"
-itertools = "0.12.0"
