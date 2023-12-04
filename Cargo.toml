@@ -21,5 +21,14 @@ path = "Day2/src/part1.rs"
 name = "day2-part2"
 path = "Day2/src/part2.rs"
 
+[[bin]]
+name = "day3-part1"
+path = "Day3/src/part1.rs"
+
+[[bin]]
+name = "day3-part2"
+path = "Day3/src/part2.rs"
+
 [dependencies]
 regex = "1.10.2"
+itertools = "0.12.0"
