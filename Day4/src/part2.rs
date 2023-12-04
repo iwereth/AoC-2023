@@ -3,7 +3,6 @@ use std::io::BufRead;
 use std::io::BufReader;
 use std::fs::File;
 use std::collections::HashSet;
-use std::cmp::min;
 
 fn amount_cards(prefix_sum: &Vec<usize>, start : usize, end : usize) -> usize {
 
