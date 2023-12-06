@@ -3,7 +3,7 @@ use std::io::BufRead;
 use std::fs::File;
 
 fn main() {
-    
+
     let file = File::open("Day6/inputs/input").unwrap();
     let reader = BufReader::new(file);
 
@@ -19,8 +19,6 @@ fn main() {
     distance =   line_iter.next().unwrap().unwrap().split(':')
                 .skip(1).map(|x| x.trim().split_whitespace()).flatten().
                 fold(String::new(), |mut x, y| {x.push_str(y); x}).parse::<i64>().unwrap();
-
-    println!("Time = {}, Distance = {}", time, distance);
 
     let det : f64 ;
 
